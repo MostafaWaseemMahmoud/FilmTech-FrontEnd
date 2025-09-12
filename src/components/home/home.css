@@ -1,0 +1,157 @@
+.home {
+  min-height: calc(100vh);
+  background-color: rgb(239 177 27);
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+}
+
+header {
+  min-width: 100%;
+  padding: 20px;
+  background-color: rgb(28 27 27);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffff;
+  padding: 20px;
+}
+
+header .logo {
+  max-width: 70px;
+  max-height: 70px;
+  border-radius: 50%;
+}
+
+.avatar {
+  max-height: 50px;
+  min-width:50px;
+  border-radius: 50%;
+}
+
+header .left-side {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .left-side h1 {
+  margin-left: 20px;
+}
+
+.center-side li{
+  display:inline-flex;
+  margin-left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.right-side h2 {
+  margin-left: 20px;
+}
+
+.div-for-btn {
+  position:fixed;
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.add-post-btn {
+  position:fixed;
+  bottom: 20px;
+  min-width: 70px;
+  min-height: 70px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: solid 2px rgb(28 27 27);
+  background-color: rgb(239 177 27);
+  padding: 11px;
+  color:#ffff;
+  cursor:pointer;
+  text-transform: uppercase;
+  transition: 1.4s;
+}
+
+.add-post-btn:hover {
+    border: solid 2px rgb(239 177 27);
+  background-color: rgb(28 27 27);
+  transform: scale(1.2);
+}
+
+
+.txt {
+  text-decoration: none;
+  color:#ffff;
+}
+
+.loading-posts {
+  width:100%;
+  color: Red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.search-users {
+  display:none;
+  position: fixed;
+  z-index: 2;
+  top: 110px
+}
+.search-users input {
+  min-width: 320px;
+  max-width: 320px;
+  padding: 20px;
+  border-radius: 11px;
+  border: solid 2px rgb(199, 195, 195);
+  outline: none;
+}
+
+.search-result {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 196, 0);
+  border-radius: 20px;
+  margin-top: 20px;
+  border: solid 4px rgb(63, 62, 62);
+}
+.search-result div {
+  display:flex;
+    max-width: 100%;
+    margin: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-result div img {
+ max-height: 50px;
+  max-width:50px;
+ min-height: 50px;
+  min-width:50px;
+  border-radius: 50%;
+}
+.search-result div h2 {
+  margin-right: -20px;
+      margin-left: 20px;
+}
+
+.show {
+  display:flex;
+  flex-direction: column;
+}

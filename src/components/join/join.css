@@ -1,0 +1,153 @@
+.signup-container {
+  background-color: white;
+  min-height: calc(100vh - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(224, 40, 40);
+}
+
+.signup-container .fields {
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(28 27 27);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 4px #a39494;
+}
+
+.signup-container .fields .heading {
+  color: #ffff;
+}
+
+.signup-container .fields .logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.signup-container .fields input {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  margin-top: 20.9px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  border-radius: 11px;
+  border: none;
+  outline-color: rgb(239 177 27);
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.signup-container .fields #avatar-input {
+  display: none;
+}
+
+.signup-container .fields button {
+  padding-top: 20px  ;
+  padding-bottom: 20px  ;
+  width: 300px;
+  margin-top: 20px;
+  background-color: rgb(224, 40, 40);
+  color: rgb(28 27 27);
+  border: none;
+  border-radius: 11px;
+  cursor: pointer;
+  transition: .5s;
+  font-size: 17px;
+}
+
+.signup-container .fields button:hover {
+  padding-top: 20px  ;
+  padding-bottom: 20px  ;
+  width: 300px;
+  margin-top: 20px;
+  color: rgb(224, 40, 40);
+  background-color: rgb(28 27 27);
+  border: solid 2px rgb(224, 40, 40);
+  border-radius: 11px;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.signup-container .fields label {
+    min-width: 300px;
+    min-height: 50px;
+    margin-top: 20px;
+    border: dashed #e02828;
+    border-radius: 16px;
+    display: flex
+;
+    font-size: 17px;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.signup-container .fields label:hover {
+    border: dashed rgb(239 177 27);
+}
+
+.err {
+  color: rgb(239 177 27);
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 11px;
+}
+
+
+
+.loadingIndicator {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111111a1;
+  left:0;
+  top:0;
+}
+
+.loadingIndicator h1 {
+  font-weight: bold;
+  color: white;
+  padding: 20px 40px;
+  border: 5px solid #e02828;
+  border-radius: 10px;
+  animation: pulse 1s infinite ease-in-out;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: black;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+.link1 {
+    color: rgb(239 177 27);
+    margin-top: 20px;
+}

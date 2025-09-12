@@ -1,0 +1,18 @@
+.message {
+  display: flex;
+  min-width: 350px;
+  padding: 20px;
+  position: fixed;
+  /* left: 20px; */
+  left: -10000px;
+  top: 20px;
+  background-color: #1c1b1b;
+  border-bottom: 5px rgb(239 177 27) solid;
+  color: #ffff;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  text-transform: uppercase;
+  transition: .5s;
+  align-items: center;
+  text-align: center;
+}
