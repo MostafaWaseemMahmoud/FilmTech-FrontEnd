@@ -14,6 +14,10 @@ function Home() {
   const  searchusersdev = useRef();
   const searchTerm = useRef();
   const navigate = useNavigate();
+  const menuTrigger = useRef();
+  const centerside = useRef();
+  const searchusertxt = useRef();
+  const rightside = useRef();
   // Handle messages with timeout
   useEffect(() => {
     if (message) {
@@ -88,11 +92,11 @@ function Home() {
           <h1>Film Tech</h1>
         </div>
 
-        <div className="center-side">
+        <div className="center-side disappear" ref={centerside}>
           <ul>
             <li><Link className='txt' to={`/account/${window.localStorage.getItem("id")}`}>Account</Link></li>
             <li><Link className='txt' to={'/requests'}>Requests</Link></li>
-            <li onClick={()=>{searchusersdev.current.classList.toggle("show")}}>Search Users</li>
+            <li onClick={()=>{searchusersdev.current.classList.toggle("show"); searchusertxt.current.classList.toggle("red") }}  ref={searchusertxt}>Search Users</li>
           </ul>
           <div className='search-users' ref={searchusersdev}>
             <input type="text" ref={searchTerm}placeholder='Search People' onChange={search}/>
@@ -111,13 +115,21 @@ function Home() {
         </div>
 
         {!loading && user ? (
-          <div className="right-side">
+          <div className="right-side disappear" ref={rightside}>
             <img className="avatar" src={user.avatar} alt="User Avatar" />
-            <h2>{user.name}</h2>
+            <h2>{user?.name}</h2>
           </div>
         ) : (
           <h1>Loading...</h1>
         )}
+            <button class="menu-trigger" onClick={()=>{menuTrigger.current.classList.toggle("active");
+              rightside.current.classList.toggle("disappear");
+              centerside.current.classList.toggle("disappear")
+            }} ref={menuTrigger} id="menu11">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
       </header>
 
       <main>

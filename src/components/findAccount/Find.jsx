@@ -88,7 +88,7 @@ const Find = () => {
       <div className="signup-container">
         <div className="fields">
           <img src="./FILM TECH lOGO.png" className="logo" alt="Logo" />
-          <h1 className="heading">Find Your Account</h1>
+          <h1 className="heading">Find Account</h1>
 
 
           <input ref={emailInput} className="input" type="email" placeholder="Please Enter Your Email" />

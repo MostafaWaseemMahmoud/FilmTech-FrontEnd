@@ -11,6 +11,8 @@
 
 .container {
   padding:0;
+      min-height: 100vh;
+      overflow: hidden;
 }
 
 .signup-container {
@@ -202,4 +204,34 @@ display: flex;
   .link1 {
     width: 191px;
 }
+}
+@media screen and (max-height:791px) {
+  .signup-container .fields{
+        max-height: 696px;
+  }
+  .signup-container .fields input {
+        min-height: 37px;
+  }
+
+        .signup-container .fields button {
+        width: 229px;
+        height: 0px;
+        display: flex
+;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signup-container .fields .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: none;
+}
+}
+
+@media screen and (max-height:630px) {
+  .signup-container .fields{
+        max-height: 609px;
+  }
 }
