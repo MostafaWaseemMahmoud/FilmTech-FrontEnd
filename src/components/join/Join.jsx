@@ -131,7 +131,7 @@ function Join() {
       )}
 
       {message && <Message messageText={message} />} {/* Show result message */}
-
+      <div className="centered">
       <div className="signup-container">
         <div className="fields">
           <img src="./FILM TECH lOGO.png" className="logo" alt="Logo" />
@@ -160,6 +160,7 @@ function Join() {
 
           <Link to='/findaccount' className='link1'>Already have An Account ?!</Link>
         </div>
+      </div>
       </div>
     </>
   );
