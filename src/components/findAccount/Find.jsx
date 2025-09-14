@@ -99,7 +99,7 @@ const Find = () => {
 
           <button onClick={submitForm}>Find Your Account</button>
 
-          <Link to='/' className='link1'>Are You New Here ?!</Link>
+          <Link to='/join' className='link1'>Are You New Here ?!</Link>
         </div>
       </div>
     </>

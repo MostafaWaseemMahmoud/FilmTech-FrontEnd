@@ -107,3 +107,43 @@
   font-weight: bold;
   border: black solid 2px;
 }
+
+@media screen and (max-width:876px) {
+  .friend-card button {
+    margin-top:20px;
+  }
+
+  .friend-card {
+        max-width: 100%;
+    display: block;
+    min-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex
+;
+    flex-direction: column;
+  }
+
+  .actions {
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: -27px;
+  }
+
+  .reqs {
+        min-width: 70%;
+    max-width: 70%;
+    min-height: 197px;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 22px;
+    padding: 20px;
+  }
+}

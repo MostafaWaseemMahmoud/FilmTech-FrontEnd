@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Message from "../message/Message";
 import './add.css';
 
@@ -126,30 +126,13 @@ const AddPost = () => {
 
   return (
     <div className="addpost">
-      <header>
-        <div className="left-side">
-          <img className="logo" src="./FILM TECH lOGO.png" alt="logo" />
-          <h1>Film Tech</h1>
-        </div>
-
-        <div className="center-side">
-          <ul>
-            <li>Account</li>
-            <li>Friends</li>
-            <li>Search Users</li>
-          </ul>
-        </div>
-
-        {!loading && user ? (
-          <div className="right-side">
-            <img className="avatar" src={user.user.avatar} alt="User Avatar" />
-            <h2>{user.user.name}</h2>
-          </div>
-        ) : (
-          <h1>Loading...</h1>
-        )}
-      </header>
-
+      <div className="backbtn">
+              <button>
+                <Link className="txt" to="/">
+                  Back To Home
+                </Link>
+              </button>
+            </div>
       <main>
         {loading && <div className="loadingIndicator"><h1>Loading...</h1></div>}
 
@@ -166,13 +149,14 @@ const AddPost = () => {
             <input ref={filmRate} className="input" type="number" placeholder="Rate the Show (0-10)" />
             <span ref={RateNumErr} className="err"></span>
 
-            <input ref={opinionInput} className="input" type="text" placeholder="What Do You Think About That Show?" />
+            <textarea ref={opinionInput} row="5" col="50" className="input" type="text" placeholder="What Do You Think About That Show or actor?"></textarea>
             <span ref={OpinionErr} className="err"></span>
 
             <select ref={category}>
               <option value="">Choose Show Category</option>
               <option value="Film">Film</option>
               <option value="Series">Series</option>
+              <option value="Actor">Actor</option>
             </select>
 
             <input

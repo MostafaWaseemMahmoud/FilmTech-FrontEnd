@@ -75,3 +75,7 @@ select {
     color: #757575;
     padding: 20px;
 }
+
+.addpost {
+  height: 100vh;
+}

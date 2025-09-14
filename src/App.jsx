@@ -6,6 +6,7 @@ import Find from './components/findAccount/Find';
 import Home from './components/home/Home';
 import Join from './components/join/Join';
 import Req from './components/requests/Req';
+import WelcomePage from './components/Welcome/Welcome';
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
     <div className="container">
       {!userId ?
       <Routes>
-        <Route path="/" element={<Join />} />
+        <Route path='/' element={<WelcomePage />}/>
+        <Route path="/join" element={<Join />} />
         <Route path="/findaccount" element={<Find />} />
       </Routes>
       :

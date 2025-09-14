@@ -115,14 +115,13 @@ function Home() {
         </div>
 
         {!loading && user ? (
+          <>
           <div className="right-side disappear" ref={rightside}>
             <img className="avatar" src={user.avatar} alt="User Avatar" />
             <h2>{user?.name}</h2>
           </div>
-        ) : (
-          <h1>Loading...</h1>
-        )}
-            <button class="menu-trigger" onClick={()=>{menuTrigger.current.classList.toggle("active");
+
+                      <button class="menu-trigger" onClick={()=>{menuTrigger.current.classList.toggle("active");
               rightside.current.classList.toggle("disappear");
               centerside.current.classList.toggle("disappear")
             }} ref={menuTrigger} id="menu11">
@@ -130,6 +129,10 @@ function Home() {
       <span></span>
       <span></span>
     </button>
+          </>
+        ) : (
+          <h1>Loading...</h1>
+        )}
       </header>
 
       <main>
